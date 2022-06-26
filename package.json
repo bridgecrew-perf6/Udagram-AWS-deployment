@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "frontend:install": "cd udagram-frontend && npm install --legacy-peer-deps && npm i -D typescript@3.4.5",
-    "frontend:build": "cd udagram-frontend && npm run build",
+    "frontend:install": "cd udagram-frontend && npm install --legacy-peer-deps",
+    "frontend:build": "cd udagram-frontend && npm i -D typescript@3.4.5 && npm run build",
     "frontend:deploy": "cd udagram-frontend && npm run deploy",
     "backend:install": "cd udagram-api && npm install",
     "backend:build": "cd udagram-api && npm run build"
