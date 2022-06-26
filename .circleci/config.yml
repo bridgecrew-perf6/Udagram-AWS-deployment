@@ -2,6 +2,16 @@ version: 2.1
 orbs:
   node: circleci/node@4.1
 jobs:
+  test:
+    docker:
+      - image: "cimg/base:stable"
+    steps:
+      - node/install
+      - checkout
+      - run:
+          name: Test App
+          command: |
+            echo "Testing Done"
   build:
     docker:
       - image: "cimg/base:stable"
@@ -9,6 +19,6 @@ jobs:
       - node/install
       - checkout
       - run:
-          name: hello
+          name: Build App
           command: |
-            echo "Hello - world"
+            echo "Building Done"
